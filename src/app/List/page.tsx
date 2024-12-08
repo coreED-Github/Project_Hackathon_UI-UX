@@ -218,7 +218,7 @@ function List() {
 
                 <button
                     onClick={handleScrollRight}
-                    className="absolute right-0 top-1/2 text-black transform-translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+                    className="absolute right-0 top-1/2 text-black transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
                 >
                     <MdKeyboardArrowRight size={15} />
                 </button>
