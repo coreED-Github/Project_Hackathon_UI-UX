@@ -38,7 +38,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 space-y-8 ml-20 mr-10 bg-white">
+    <div className="max-w-4xl mx-auto p-6 space-y-8  bg-white">
       <h1 className="font-bold text-[#2A254B] mb-10 font-serif text-center text-2xl">Contact Us</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -47,8 +47,8 @@ const Contact = () => {
             <div className="text-red-500 text-2xl">📞</div>
             <div>
               <h2 className="text-lg text-black font-bold">Call To Us</h2>
-              <p className="text-black">We are available 24/7.</p>
-              <p className="text-black">Phone: +988123456789</p>
+              <p className="text-black">Wavailable 24h.</p>
+              <p className="text-black">Phone: +9881234</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
@@ -56,8 +56,8 @@ const Contact = () => {
             <div>
               <h2 className="text-lg text-black font-bold">Write To Us</h2>
               <p className="text-black">Emails:</p>
-              <p className="text-black">customer@Avion.com</p>
-              <p className="text-black">support@Avion.com</p>
+              <p className="text-black">cus@Avion.com</p>
+              <p className="text-black">supp@Avion.com</p>
             </div>
           </div>
         </div>
