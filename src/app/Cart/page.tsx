@@ -83,7 +83,7 @@ const Cart = () => {
                                 min="1"
                                 value={product.quantity}
                                 onChange={(e) => updateQuantity(product.id, +e.target.value)}
-                                className="border rounded w-16 text-center"
+                                className="border text-black rounded w-16 text-center"
                             />
                             <p className="text-gray-800 font-semibold">
                                 Total: ${product.price * product.quantity}

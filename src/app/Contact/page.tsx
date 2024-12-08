@@ -46,18 +46,18 @@ const Contact = () => {
           <div className="flex items-center space-x-4">
             <div className="text-red-500 text-2xl">📞</div>
             <div>
-              <h2 className="text-lg font-bold">Call To Us</h2>
-              <p>We are available 24/7.</p>
-              <p>Phone: +988123456789</p>
+              <h2 className="text-lg text-black font-bold">Call To Us</h2>
+              <p className="text-black">We are available 24/7.</p>
+              <p className="text-black">Phone: +988123456789</p>
             </div>
           </div>
           <div className="flex items-center space-x-4">
             <div className="text-red-500 text-2xl">📧</div>
             <div>
-              <h2 className="text-lg font-bold">Write To Us</h2>
-              <p>Emails:</p>
-              <p>customer@Avion.com</p>
-              <p>support@Avion.com</p>
+              <h2 className="text-lg text-black font-bold">Write To Us</h2>
+              <p className="text-black">Emails:</p>
+              <p className="text-black">customer@Avion.com</p>
+              <p className="text-black">support@Avion.com</p>
             </div>
           </div>
         </div>

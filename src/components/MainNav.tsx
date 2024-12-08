@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 
 const MainNav = () => {
     return (
-        <div>
+        <div className="h-full w-ull">
             <Header />
             <Navbar />
             <MubNav />

@@ -8,7 +8,7 @@ import List from "./List/page";
 
 export default function Home() {
   return (
-   <div className="bg-white  ">
+   <div className="bg-white w-[98%]">
 <Hero/>
 <Brand/>
 <Ceramics/>

@@ -5,7 +5,7 @@ import { FiShoppingCart, FiPhone, FiSearch } from 'react-icons/fi';
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col ">
+    <nav className="flex flex-col">
     <div className='bg-white w-full h-18 flex justify-between items-center px-3 py-2 shadow-md border border-gray-200 '>
      <Link href="#">
      <FiSearch className="w-6 h-6 text-gray-700"/>
