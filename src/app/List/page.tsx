@@ -1,0 +1,251 @@
+"use client"
+import React from "react";
+import { AiOutlineHeart, AiOutlineEye } from "react-icons/ai";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import Link from "next/link";
+const products = [
+    {
+        id: 1,
+        name: "The Dandy chair",
+        price: "$100",
+        image: "/p1.jpeg",
+
+    },
+    {
+        id: 2,
+        name: "Rustic Vase Set",
+        price: "$960",
+        image: "/ps.jpeg",
+
+    },
+    {
+        id: 3,
+        name: "The Silky Vase",
+        price: "$700",
+        image: "/p3.jpeg",
+
+    },
+    {
+        id: 4,
+        name: "The Lucy Lamp ",
+        price: "$250",
+        image: "/p4.jpeg",
+
+    },
+    {
+        id: 5,
+        name: "The Golden Lamp",
+        price: "$15",
+        image: "/p5.jpeg",
+
+    },
+    {
+        id: 6,
+        name: "Rustic Vase Set",
+        price: "$250",
+        image: "/p6.jpeg",
+
+    },
+    {
+        id: 7,
+        name: "The Silky Vase",
+        price: "$250",
+        image: "/p7.jpeg",
+
+    },
+    {
+        id: 8,
+        name: "The Lucy Lamp",
+        price: "$50",
+        image: "/p8.jpeg",
+
+    },
+    {
+        id: 9,
+        name: "The Dandy chair",
+        price: "$450",
+        image: "/p9.jpeg",
+
+    },
+    {
+        id: 10,
+        name: "Rustic Vase Set",
+        price: "$450",
+        image: "/p10.jpeg",
+    },
+
+];
+
+function List() {
+    const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+
+    const handleScrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: -300,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const handleScrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollBy({
+                left: 300,
+                behavior: "smooth",
+            });
+        }
+    };
+
+    return (
+        <div className="relative w-full mt-10 mb-5">
+            <div className="bg-white border  border-gray-200  h-32 text-start flex justify-between items-center px-1 py-1 text-xl lg:text-xs">
+                <div className=" flex-1 flex justify-center text-[#2A254B]  mb-3 font-serif ml-5 gap-4 tex-left sm:text-left lg:text-center md:text-center text-2xl sm:text-1xl md:text-1xl lg:text-2xl">
+                    <p>A brand built on the love of craftmanship,
+                        quality and outstanding customer service</p>
+
+                </div>
+                <div className="flex items-center gap-5 ">
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div className="bg-white  border border-gray-300 text-white flex justify-between h-16 items-center px-1 py-1 text-xl lg:text-xs">
+
+                <div className="flex items-center gap-5 ml-10 ">
+                    <select
+                        className="bg-white text-gray-900 border w-20 h-8  rounded text-xs mr-2"
+                        aria-label="Cetegory"
+                    >
+                        <option>
+                            Category
+                        </option>
+                        <option>Sles</option>
+                        <option>Accessories</option>
+                        <option>Homeware</option>
+                        <option>Light fittings</option>
+                        <option>Sofas</option>
+                        <option>Furniture</option>
+
+                    </select>
+
+                    <select
+                        className="bg-white text-gray-900 border w-20 h-8  rounded text-xs mr-2"
+                        aria-label="Cetegory"
+                    >
+                        <option>
+                            Product type
+                        </option>
+                        <option>Electric</option>
+                        <option>Furniture</option>
+                        <option>HomeWare </option>
+                        <option>Light fittings</option>
+                        <option>Sofas</option>
+                        <option>Furniture</option>
+
+                    </select>
+                    <select
+                        className="bg-white text-gray-900 border w-20 h-8  rounded text-xs mr-2"
+                        aria-label="Cetegory"
+                    >
+                        <option>
+                            Price
+                        </option>
+                        <option>10k to 20k</option>
+                        <option>20k to 50k </option>
+                        <option>50k to 10k</option>
+                        <option>10k to 01M</option>
+                        <option>01M to 20M</option>
+
+
+                    </select>
+
+                </div>
+            </div>
+
+
+
+
+
+            <h2 className="text-2xl font-bold mb-4"></h2>
+            <div className="relative">
+
+                <button
+                    onClick={handleScrollLeft}
+                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+                >
+                    <MdKeyboardArrowLeft size={15} />
+                </button>
+                <div
+                    ref={scrollContainerRef}
+                    className="flex overflow-x-scroll scrollbar-hide space-x-6"
+                >
+                    {products.map((product) => (
+                        <div
+                            key={product.id}
+                            className="relative w-[200px] h-[290px] gap-6 bg-white shadow-md rounded-lg overflow-hidden flex-shrink-0"
+                        >
+
+
+                            <img
+                                src={product.image}
+                                alt={product.name}
+                                className="w-full h-[180px] object-contain bg-gray-100"
+                            />
+                            <div className="absolute top-2 right-2 flex flex-col space-y-2 opacity-0 hover:opacity-100 transition-opacity">
+                                <button className="bg-white p-2 rounded-full shadow hover:bg-gray-200">
+                                    <AiOutlineHeart size={20} className="text-red-600" />
+                                </button>
+                                <button className="bg-white p-2 rounded-full shadow hover:bg-gray-200">
+                                    <AiOutlineEye size={20} className="text-gray-800" />
+                                </button>
+                            </div>
+
+
+                            <div className="p-4">
+                                <h3 className="text-sm font-bold text-gray-800">
+                                    {product.name}
+                                </h3>
+
+
+                                <div className="flex items-center space-x-2 mt-2">
+                                    <span className="text-slate-800 font-bold text-lg">
+                                        {product.price}
+                                    </span>
+
+                                </div>
+
+                                <div className="flex items-center mt-0.2">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    ))}
+                </div>
+
+                <button
+                    onClick={handleScrollRight}
+                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+                >
+                    <MdKeyboardArrowRight size={15} />
+                </button>
+            </div>
+            <div className="flex justify-center items-center">
+                <Link href="/List">
+                    <button className="bg-[#F9F9F9] hover:bg-gray-400 items-center text-gray-700 px-6 py-2 mt-10 mb-10 rounded">
+                        View Collection
+                    </button>
+                </Link>
+            </div >
+        </div>
+    );
+};
+
+export default List;
