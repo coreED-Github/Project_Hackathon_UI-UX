@@ -17,27 +17,27 @@ export default function Categories() {
        
         <div className="flex flex-col items-center justify-center border p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
           <DevicePhoneMobileIcon className= "h-8 w-8 text-red-500 mb-2"/>
-          <p className="text-sm font-semibold">Phones</p>
+          <p className="text-black text-sm font-semibold">Phones</p>
         </div>
  <div className="flex flex-col items-center justify-center border p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
           <ComputerDesktopIcon className="h-8 w-8 text-blue-500 mb-2" />
-          <p className="text-sm font-semibold">Computers</p>
+          <p className="text-sm text-black font-semibold">Computers</p>
         </div>
  <div className="flex flex-col items-center justify-center border p-4 rounded-lg shadow hover:shadow-lg transition-shadow">
           <DeviceTabletIcon className="h-8 w-8 text-green-500 mb-2" />
-          <p className="text-sm font-semibold">SmartWatch</p>
+          <p className="text-sm text-black font-semibold">SmartWatch</p>
         </div>
 <div className=" border p-4 rounded-lg shadow hover:shadow-lg flex flex-col items-center justify-center transition-shadow">
           <CameraIcon className="h-8 w-8 text-yellow-500 mb-2" />
-          <p className="text-sm font-semibold">Camera</p>
+          <p className="text-sm text-black font-semibold">Camera</p>
         </div>
  <div className=" border p-4 rounded-lg flex flex-col items-center justify-center shadow hover:shadow-lg transition-shadow">
           <MegaphoneIcon className="h-8 w-8 text-purple-500 mb-2" />
-          <p className="text-sm font-semibold">HeadPhones</p>
+          <p className="text-sm text black font-semibold">HeadPhones</p>
         </div>
         <div className=" border p-4 rounded-lg flex flex-col items-center justify-center shadow hover:shadow-lg transition-shadow">
           <DevicePhoneMobileIcon className="h-8 w-8 text-pink-500 mb-2" />
-          <p className="text-sm font-semibold">Smart phone</p>
+          <p className="text-sm text-black font-semibold">Smart phone</p>
         </div>
       </div>
     </div>

@@ -98,7 +98,7 @@ function List() {
     };
 
     return (
-        <div className="relative w-full mt-10 mb-5">
+        <div className="relative w-full mt-10 mb-5 mr-4 ml-4">
             <div className="bg-white border  border-gray-200  h-32 text-start flex justify-between items-center px-1 py-1 text-xl lg:text-xs">
                 <div className=" flex-1 flex justify-center text-[#2A254B]  mb-3 font-serif ml-5 gap-4 tex-left sm:text-left lg:text-center md:text-center text-2xl sm:text-1xl md:text-1xl lg:text-2xl">
                     <p>A brand built on the love of craftmanship,
@@ -135,21 +135,7 @@ function List() {
 
                     </select>
 
-                    <select
-                        className="bg-white text-gray-900 border w-20 h-8  rounded text-xs mr-2"
-                        aria-label="Cetegory"
-                    >
-                        <option>
-                            Product type
-                        </option>
-                        <option>Electric</option>
-                        <option>Furniture</option>
-                        <option>HomeWare </option>
-                        <option>Light fittings</option>
-                        <option>Sofas</option>
-                        <option>Furniture</option>
-
-                    </select>
+                   
                     <select
                         className="bg-white text-gray-900 border w-20 h-8  rounded text-xs mr-2"
                         aria-label="Cetegory"
@@ -178,7 +164,7 @@ function List() {
 
                 <button
                     onClick={handleScrollLeft}
-                    className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+                    className="absolute left-0 text-black top-1/2 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
                 >
                     <MdKeyboardArrowLeft size={15} />
                 </button>
@@ -232,7 +218,7 @@ function List() {
 
                 <button
                     onClick={handleScrollRight}
-                    className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
+                    className="absolute right-0 top-1/2 text-black transform-translate-y-1/2 z-10 bg-white p-3 rounded-full shadow hover:bg-gray-200"
                 >
                     <MdKeyboardArrowRight size={15} />
                 </button>
